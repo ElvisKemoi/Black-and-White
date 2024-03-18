@@ -1,0 +1,66 @@
+/* Font Imports  */
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stylish&display=swap");
+:root {
+	--color-1: #000000;
+	--color-2: #f4dfc8;
+	--color-3: #f4eae0;
+	--color-4: #faf6f0;
+	--font-1: "Stylish", serif;
+	--font-2: "Style Script", cursive;
+	--font-3: "Poppins", sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+/* Header */
+header {
+	display: block;
+	background-color: var(--color-1);
+	position: sticky;
+	top: 0;
+}
+.navbar-brand {
+	color: var(--color-2);
+	font-family: var(--font-1);
+}
+.navbar-toggler {
+	background-color: var(--color-2);
+}
+.nav-link {
+	color: var(--color-4);
+}
+#navbarNav {
+	transition: 0.2s ease-in;
+	text-align: center;
+	font-family: var(--font-1);
+}
+/* Main */
+main {
+	min-height: 100vh;
+	background-color: var(--color-1);
+	color: var(--color-2);
+	font-family: var(--font-1);
+}
+
+h1 {
+	font-size: 3rem;
+}
+.text1 {
+	color: var(--color-4);
+	font-weight: 300;
+
+	font-family: var(--font-3);
+}
+#heroWords {
+	padding: 50px 0 0;
+}
+.downarrow {
+	position: sticky;
+	bottom: 10px;
+	text-align: center;
+}
+.downarrow:hover {
+	transform: scale(1.2);
+}
