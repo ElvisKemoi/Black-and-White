@@ -64,6 +64,10 @@ main {
 	transform: scale(1.2);
 }
 
+#image1 {
+	border-radius: 15vw 0;
+}
+
 /* Air */
 #cursor {
 	animation: 1.2s infinite steps(1) blink;

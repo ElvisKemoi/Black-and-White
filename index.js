@@ -1,3 +1,4 @@
+// Word Animate
 const words = [
 	"Software Engineer<i class='bx bxs-star-half'></i>",
 	"Web Developer<i class='bx bx-star' ></i>",
@@ -16,11 +17,9 @@ words.forEach((word) => {
 		yoyo: true,
 		repeatDelay: 2,
 	});
-
 	textTimeline.to("#typewriter", {
 		text: word,
 		duration: 1,
 	});
-
 	mainTimeline.add(textTimeline);
 });
