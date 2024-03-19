@@ -40,18 +40,21 @@ header {
 /* Main */
 main {
 	min-height: 100vh;
-	background-color: var(--color-1);
+	/* background-color: var(--color-1); */
+	background-image: linear-gradient(to right, var(--color-1), var(--color-2));
 	color: var(--color-2);
 	font-family: var(--font-1);
 }
 
 .text1 {
 	color: var(--color-5);
-	font-weight: 300;
+	font-weight: 500;
 	letter-spacing: 0.5vw;
-
 	font-family: var(--font-3);
 }
+
+/* Hero */
+
 #heroWords {
 	padding: 50px 0 0;
 }
@@ -81,4 +84,38 @@ main {
 	50% {
 		opacity: 1;
 	}
+}
+
+/* About */
+#about {
+	height: auto;
+}
+
+#image10 {
+	border-radius: 15vw 0;
+}
+.aboutMe {
+	font-size: 4rem;
+	color: var(--color-5);
+	/* text-decoration: underline var(--color-2) 1px; */
+}
+hr {
+	color: var(--color-1);
+}
+.aboutMeParagraph {
+	color: var(--color-5);
+	border-radius: 0 15vw;
+	padding-right: 10vw;
+
+	background-image: linear-gradient(to right, var(--color-1), transparent);
+}
+.aboutMeParagraph2 {
+	color: var(--color-5);
+	border-radius: 0 15vw;
+	padding-right: 10vw;
+
+	background-image: linear-gradient(to right, transparent, var(--color-1));
+}
+#image2 {
+	border-radius: 15vw 0;
 }

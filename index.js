@@ -1,5 +1,6 @@
 // Word Animate
 const words = [
+	"Full Stack Dev<i class='bx bxs-star-half'></i>",
 	"Software Engineer<i class='bx bxs-star-half'></i>",
 	"Web Developer<i class='bx bx-star' ></i>",
 	"Graphic Designer<i class='bx bxs-star' ></i>",
