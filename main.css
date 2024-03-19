@@ -18,7 +18,6 @@
 /* Header */
 header {
 	display: block;
-	/* background-color: var(--color-1); */
 	position: sticky;
 	top: 0;
 	background-image: linear-gradient(to right, var(--color-1), var(--color-2));
@@ -41,7 +40,6 @@ header {
 /* Main */
 main {
 	min-height: 100vh;
-	/* background-color: var(--color-1); */
 	background-image: linear-gradient(to right, var(--color-1), var(--color-2));
 	color: var(--color-2);
 	font-family: var(--font-1);
@@ -98,7 +96,6 @@ main {
 .aboutMe {
 	font-size: 4rem;
 	color: var(--color-5);
-	/* text-decoration: underline var(--color-2) 1px; */
 }
 hr {
 	color: var(--color-1);
