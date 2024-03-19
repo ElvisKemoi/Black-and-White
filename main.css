@@ -14,13 +14,15 @@
 }
 * {
 	box-sizing: border-box;
+	/* overflow-y: hidden; */
 }
 /* Header */
 header {
 	display: block;
-	background-color: var(--color-1);
+	/* background-color: var(--color-1); */
 	position: sticky;
 	top: 0;
+	background-image: linear-gradient(to right, var(--color-1), var(--color-2));
 }
 .navbar-brand {
 	color: var(--color-2);
@@ -92,7 +94,7 @@ main {
 }
 
 #image10 {
-	border-radius: 15vw 0;
+	border-radius: 15vw 0 0;
 }
 .aboutMe {
 	font-size: 4rem;
@@ -102,20 +104,28 @@ main {
 hr {
 	color: var(--color-1);
 }
+.aboutMeParagraph,
+.aboutMeParagraph2 {
+	padding-top: 3rem;
+}
 .aboutMeParagraph {
 	color: var(--color-5);
-	border-radius: 0 15vw;
+	border-radius: 0 15vw 0 0;
 	padding-right: 10vw;
 
 	background-image: linear-gradient(to right, var(--color-1), transparent);
 }
 .aboutMeParagraph2 {
 	color: var(--color-5);
-	border-radius: 0 15vw;
+	border-radius: 0 0 0 15vw;
 	padding-right: 10vw;
 
 	background-image: linear-gradient(to right, transparent, var(--color-1));
 }
 #image2 {
-	border-radius: 15vw 0;
+	border-radius: 0 0 15vw 0;
+}
+
+#aboutContactButton {
+	color: var(--color-2);
 }
