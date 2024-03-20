@@ -27,7 +27,7 @@ header {
 	font-family: var(--font-1);
 }
 .navbar-toggler {
-	background-color: var(--color-2);
+	background-color: var(--color-5);
 }
 .nav-link {
 	color: var(--color-4);
