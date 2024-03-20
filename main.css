@@ -109,7 +109,7 @@ hr {
 	border-radius: 0 15vw 0 0;
 	padding-right: 10vw;
 
-	background-image: linear-gradient(to right, var(--color-1), transparent);
+	background-image: linear-gradient(to top, var(--color-1), transparent);
 }
 .aboutMeParagraph2 {
 	color: var(--color-5);
@@ -124,4 +124,13 @@ hr {
 
 #aboutContactButton {
 	color: var(--color-2);
+}
+.downarrow2 {
+	position: sticky;
+	bottom: 10px;
+	top: 10px;
+	text-align: center;
+}
+.downarrow2:hover {
+	transform: scale(1.2);
 }
