@@ -38,19 +38,29 @@
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="collapse navbar-collapse text-center" id="navbarNav">
 						<ul class="navbar-nav ms-auto fs-2">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link mx-2 active" aria-current="page" href="#hero"
+									>Home</a
+								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#about">About</a>
+								<a class="nav-link mx-2" href="#about">About Me</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Projects</a>
+								<a class="nav-link mx-2" href="#skills">Skills</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+								<a class="nav-link mx-2" href="#">Projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link mx-2" href="#">Contact Me</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link mx-2 disabled" aria-disabled="true"
+									><i class="border langIcon bx bx-cog fs-1"></i
+								></a>
 							</li>
 						</ul>
 					</div>
@@ -82,7 +92,7 @@
 						alt=""
 					/>
 				</div>
-				<div class="downarrow display-1">
+				<div class="downarrow display-1 text-center">
 					<a class="text1" href="#about">
 						<i class="bx bxs-chevrons-down"></i>
 					</a>
@@ -90,13 +100,13 @@
 			</section>
 			<section id="about" class="container">
 				<div class="row">
-					<div class="d-flex justify-content-center">
-						<h1 class="aboutMe">
-							About Me
+					<!-- <div class="d-flex justify-content-center"> -->
+					<h1 class="aboutMe text-center">
+						About Me
 
-							<hr class="my-3" />
-						</h1>
-					</div>
+						<hr class="my-3" />
+					</h1>
+					<!-- </div> -->
 					<!-- <div class="" style="background-color: red; height: 50%"> -->
 					<img
 						id="image10"
@@ -105,7 +115,9 @@
 						alt=""
 					/>
 					<!-- </div> -->
-					<div class="col-lg-6 col-md-12 col-sm-12 aboutMeParagraph">
+					<div
+						class="col-lg-6 col-md-12 col-sm-12 aboutMeParagraph d-flex flex-column justify-content-center"
+					>
 						<h2>Hi,</h2>
 						<p class="fs-4 px-2">
 							I’m a passionate software developer and web designer based in
@@ -140,16 +152,105 @@
 						Contact Me
 					</button>
 				</div>
-				<div class="downarrow2 display-1">
+				<div class="downarrow2 text-center display-1">
 					<a class="text1" href="#skills">
 						<i class="bx bxs-chevrons-down"></i>
 					</a>
+				</div>
+			</section>
+			<section id="skills" class="containter" style="min-height: 100vh">
+				<h1 class="mySkills text-center">
+					Skills
+
+					<hr class="my-3" />
+				</h1>
+				<h2 class="text-center">
+					I am proficient in the following frontend and backend languages and
+					frameworks.
+				</h2>
+				<div class="row mx-auto">
+					<div
+						id="front-end"
+						class="col-lg-6 col-sm-10 mx-auto border border-dark py-3"
+						style="min-height: 50vh; background-color: transparent"
+					>
+						<!-- <h2 class="text-center fs-1 mb-4 pb-4">Frontend Skills</h2> -->
+						<div class="">
+							<div class="d-flex">
+								<div class="col-5 display-1 text-end">
+									<p><i class="border langIcon bx bxl-html5"></i></p>
+								</div>
+								<div class="col-7 mx-3">
+									<h2 class="text-center">HTMl</h2>
+								</div>
+							</div>
+							<div class="d-flex">
+								<div class="col-5 display-1 text-end">
+									<p><i class="border langIcon bx bxl-css3"></i></p>
+								</div>
+								<div class="col-7">
+									<h2 class="text-center">Css</h2>
+								</div>
+							</div>
+							<div class="d-flex">
+								<div class="col-5 display-1 text-end">
+									<p><i class="border langIcon bx bxl-bootstrap"></i></p>
+								</div>
+								<div class="col-7">
+									<h2 class="text-center">Bootstrap</h2>
+								</div>
+							</div>
+							<div class="d-flex">
+								<div class="col-5 display-1 text-end">
+									<p><i class="border langIcon bx bxl-tailwind-css"></i></p>
+								</div>
+								<div class="col-7">
+									<h2 class="text-center">Tailwind Css</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						id="back-end"
+						class="col-lg-6 col-sm-10 mx-auto border border-dark py-3"
+						style="min-height: 50vh; background-color: transparent"
+					>
+						<!-- <h2 class="text-center mb-4 pb-4 fs-1">Backend Skills</h2> -->
+						<div class="">
+							<div class="d-flex">
+								<div class="col-5 display-1 text-end">
+									<p><i class="border langIcon bx bxl-jquery"></i></p>
+								</div>
+								<div class="col-7">
+									<h2 class="text-center">Jquery</h2>
+								</div>
+							</div>
+							<div class="d-flex">
+								<div class="col-5 display-1 text-end">
+									<p><i class="bx bxl-nodejs"></i></p>
+								</div>
+								<div class="col-7">
+									<h2 class="text-center">Node Js</h2>
+								</div>
+							</div>
+							<div class="d-flex">
+								<div class="col-5 display-1 text-end">
+									<p><i class="border langIcon bx bx-code-alt"></i></p>
+								</div>
+								<div class="col-7">
+									<h2 class="text-center">Javascript</h2>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
 
 		<!-- Javascript scripts -->
 		<section>
+			<!-- Jquery -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<!-- Air -->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 

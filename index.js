@@ -1,3 +1,6 @@
+// Variables
+const autoScrollDuration = 600;
+
 // Word Animate
 const words = [
 	"Full Stack Developer",
@@ -24,3 +27,47 @@ words.forEach((word) => {
 	});
 	mainTimeline.add(textTimeline);
 });
+
+// Smooth scroll
+$(document).ready(function () {
+	// Add smooth scrolling to all links
+	$("a").on("click", function (event) {
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+			// Store hash
+			var hash = this.hash;
+			// Using jQuery's animate() method to add smooth page scroll
+			$("html, body").animate(
+				{
+					scrollTop: $(hash).offset().top,
+				},
+				autoScrollDuration, // Adjust the duration as needed
+				function () {
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				}
+			);
+		}
+	});
+});
+
+// Active section
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+function highlightNavLink() {
+	sections.forEach((section, index) => {
+		const rect = section.getBoundingClientRect();
+		const isActive = rect.top <= 500 && rect.bottom >= 500; // Adjust the threshold as needed
+
+		if (isActive) {
+			navLinks[index].classList.add("active");
+		} else {
+			navLinks[index].classList.remove("active");
+		}
+	});
+}
+
+window.addEventListener("scroll", highlightNavLink);

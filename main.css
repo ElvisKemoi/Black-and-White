@@ -12,11 +12,14 @@
 	--font-2: "Style Script", cursive;
 	--font-3: "Poppins", sans-serif;
 }
+
 * {
 	box-sizing: border-box;
+	color: var(--color-5);
 }
 /* Header */
 header {
+	z-index: 1000;
 	display: block;
 	position: sticky;
 	top: 0;
@@ -31,10 +34,10 @@ header {
 }
 .nav-link {
 	color: var(--color-4);
+	transition: ease-in 0.3s;
 }
 #navbarNav {
 	transition: 0.2s ease-in;
-	text-align: center;
 	font-family: var(--font-1);
 }
 /* Main */
@@ -60,7 +63,6 @@ main {
 .downarrow {
 	position: sticky;
 	bottom: 10px;
-	text-align: center;
 }
 .downarrow:hover {
 	transform: scale(1.2);
@@ -88,12 +90,14 @@ main {
 /* About */
 #about {
 	height: auto;
+	transform: scale(0.9);
 }
 
 #image10 {
 	border-radius: 15vw 0 0;
 }
-.aboutMe {
+.aboutMe,
+.mySkills {
 	font-size: 4rem;
 	color: var(--color-5);
 }
@@ -129,8 +133,18 @@ hr {
 	position: sticky;
 	bottom: 10px;
 	top: 10px;
-	text-align: center;
 }
 .downarrow2:hover {
 	transform: scale(1.2);
+}
+/* Skills */
+.langIcon {
+	border-radius: 0 1vw;
+	color: var(--color-5);
+	background-color: var(--color-1);
+}
+#front-end,
+#back-end {
+	border-radius: 0 16vw;
+	border: 3rem solid;
 }
